@@ -1,4 +1,4 @@
-namespace DigitalHire
+﻿namespace DigitalHire
 {
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;

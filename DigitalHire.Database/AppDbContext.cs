@@ -1,9 +1,20 @@
 ﻿namespace DigitalHire.Database
 {
-    using System;
     using Microsoft.EntityFrameworkCore;
 
-    public class AppDbContext : DbContext
+    /// <summary>
+    /// Контекст базы данных
+    /// </summary>
+    public sealed class AppDbContext : DbContext
     {
+        /// <summary>
+        /// AppDbContext
+        /// </summary>
+        /// <param name="options">options</param>
+        public AppDbContext(DbContextOptions<AppDbContext> options)
+            : base(options)
+        {
+            Database.EnsureCreated();
+        }
     }
 }
