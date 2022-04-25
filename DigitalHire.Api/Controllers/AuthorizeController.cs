@@ -1,4 +1,4 @@
-﻿namespace DigitalHire.Controllers
+namespace DigitalHire.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
 
@@ -17,6 +17,7 @@
         public string TestMethod()
         {
             return "Hello";
+??
         }
     }
 }
